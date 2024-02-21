@@ -1,0 +1,28 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+#ekgCanvas {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  /* padding: 10px 0; */
+  margin: 2% 0;
+}
+
+.heartrate {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .animation-con {
+  height: 300px;
+  width: fit-content;
+}
