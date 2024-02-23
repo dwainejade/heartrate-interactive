@@ -3,7 +3,7 @@ import { useLottie } from "lottie-react";
 import bikeAnimation from "../assets/bike_animation.json";
 import Monitor from "./HeartRateMonitor";
 
-function Runner() {
+function Biker() {
     const [heartRate, setHeartRate] = useState(60)
     const [rate, setRate] = useState(1); // Control speed
     const [currentSegmentName, setCurrentSegmentName] = useState("normal");
@@ -68,4 +68,4 @@ function Runner() {
     );
 }
 
-export default Runner;
+export default Biker;

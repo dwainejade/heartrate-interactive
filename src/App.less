@@ -1,0 +1,128 @@
+#root {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.App {
+  height: 520px;
+  width: 100%;
+  max-width: 900px;
+  overflow: hidden;
+  position: relative;
+}
+
+#ekgCanvas {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin: 2% 0;
+}
+
+.heartrate {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1;
+
+  .animation-con {
+    height: 300px;
+    width: fit-content;
+  }
+}
+
+.ui-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  .right-con {
+    width: 240px;
+    height: fit-content;
+    margin: 1%;
+    padding: 0.5%;
+    display: flex;
+    flex-direction: column;
+    border: solid #333;
+
+    .section {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      height: 40px;
+
+      .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex: 1;
+      }
+      .stat {
+        border: solid 1px #ccc;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    .controls-con {
+      border: salmon 1px;
+      .btn.arrow {
+        height: 40px;
+        width: 40px;
+        border: 1px solid;
+        border-radius: 50%;
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  .reset-con {
+    display: flex;
+    .reset-btn {
+    }
+  }
+
+  .bottom-con {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+
+    .section {
+      border: 1px solid #ccc;
+      height: 100%;
+      flex: 1;
+      padding: 0.5%;
+
+      .trial {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        font-size: 1.8rem;
+        font-weight: bold;
+      }
+
+      .title {
+        font-weight: bold;
+      }
+    }
+  }
+}

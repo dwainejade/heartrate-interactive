@@ -1,25 +1,16 @@
-import Biker from "./components/Biker";
-import Runner from "./components/Runner";
+// import Biker from "./components/Biker";
+import Runner from "./components/Runner2";
 import './App.css'
+import UI from "./components/UI";
 
 export default function App() {
 
   return (
     <div className="App">
       <Runner />
-      <Biker />
+      {/* <Biker /> */}
 
-      {/* <div>
-        <label htmlFor="heartRateInput">Heart Rate: </label>
-        <input
-          id="heartRateInput"
-          type="number"
-          min="30"
-          max="200"
-          value={heartRate}
-          onChange={handleHeartRateChange}
-        />
-      </div> */}
+      <UI />
     </div>
   );
 }
